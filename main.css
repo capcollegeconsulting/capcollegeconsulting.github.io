@@ -79,6 +79,10 @@ body {
   display: none;
 }
 
+.vocab {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
 
 @media screen and (max-width: 760px) {
   .navbar__items.show, {
