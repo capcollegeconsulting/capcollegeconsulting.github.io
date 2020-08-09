@@ -63,6 +63,7 @@ body {
 .navbar__icons i {
   padding: 5px;
   font-size: 20px;
+  color: black;
 }
 
 .navbar__items li:hover {
