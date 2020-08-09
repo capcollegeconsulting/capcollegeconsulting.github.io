@@ -65,7 +65,61 @@ body {
   font-size: 20px;
 }
 
-li a:hover {
+.navbar__items li:hover {
   background-color: var(--secondary);
   border-radius: 20px;
+}
+
+.hamburger-btn {
+  font-size: 20px;
+  position: absolute;
+  top: 25px;
+  right: 22px;
+  display: none;
+}
+
+
+@media screen and (max-width: 760px) {
+  .navbar__items.show, {
+    display: flex;
+  }
+
+  .navbar__main {
+    flex-direction: column;
+    height: auto;
+    margin: 0px;
+    align-items: flex-start;
+  }
+
+  .navbar__logo {
+    margin: 0px;
+  }
+
+  .navbar__items {
+    width: 100%;
+    display: none;
+  }
+  .navbar__items ul {
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+    align-items: center;
+  }
+  .navbar__items ul li {
+    padding: 0 40%;
+  }
+
+  .navbar__icons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+}
+
+.show {
+  display: flex;
 }
